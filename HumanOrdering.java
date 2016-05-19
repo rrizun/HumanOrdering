@@ -4,7 +4,19 @@ import java.util.regex.*;
 
 import com.google.common.collect.*;
 
-// e.g., foo9 < foo10 < foo99 < foo100
+// e.g.,
+// foo1
+// foo2
+// foo3
+// foo4
+// foo5
+// foo6
+// foo7
+// foo8
+// foo9
+// foo10
+// foo11
+// foo12
 public class HumanOrdering extends Ordering<String> {
   static Pattern p = Pattern.compile("[0-9]+|[^0-9]+");
   static List<Object> list(String input) {
